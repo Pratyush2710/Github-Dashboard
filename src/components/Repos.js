@@ -5,7 +5,41 @@ import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { githubRepos } = React.useContext(GithubContext);
   console.log(githubRepos);
-  return <ExampleChart />;
+
+  const chartData = [
+    29.9,
+    71.5,
+    106.4,
+    129.2,
+    144.0,
+    176.0,
+    135.6,
+    148.5,
+    216.4,
+    95.6,
+    54.4,
+  ];
+  const chartLabels = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  return (
+    <section className="section">
+      <Wrapper className="section-center">
+        <ExampleChart data={chartData} labels={chartLabels} />
+      </Wrapper>
+    </section>
+  );
 };
 
 const Wrapper = styled.div`
