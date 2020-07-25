@@ -5,7 +5,7 @@ import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { githubRepos } = React.useContext(GithubContext);
   console.log(githubRepos);
-  return <h2>repos component</h2>;
+  return <ExampleChart />;
 };
 
 const Wrapper = styled.div`
