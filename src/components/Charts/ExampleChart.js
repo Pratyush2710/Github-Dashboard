@@ -20,14 +20,14 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-const ChartComponent = ({ data, labels }) => {
-  console.log(data, labels);
+const ChartComponent = ({ data }) => {
+  console.log(data);
   const options = {
     chart: {
       type: "column",
     },
     xAxis: {
-      categories: labels,
+      // categories: labels,
     },
 
     plotOptions: {

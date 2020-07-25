@@ -4,39 +4,42 @@ import { GithubContext } from "../context/context";
 import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { githubRepos } = React.useContext(GithubContext);
-  console.log(githubRepos);
+  // console.log(githubRepos);
 
-  const chartData = [
-    29.9,
-    71.5,
-    106.4,
-    129.2,
-    144.0,
-    176.0,
-    135.6,
-    148.5,
-    216.4,
-    95.6,
-    54.4,
-  ];
-  const chartLabels = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
+  let languages = githubRepos.reduce((total, item) => {
+    const { language } = item;
+    if (!language) return total;
+    console.log(language);
+    if (!total[language]) {
+      total[language] = [language, 1];
+    } else {
+      total[language] = [language, total[language][1] + 1];
+    }
+    return total;
+  }, {});
+  // console.log(languages);
+  //Object changed to array for data structuring
+  // Sorted the array to get most popular languages
+  // Sliced to 5 popular languages
+  languages = Object.values(languages)
+    .sort((a, b) => {
+      return b[1] - a[1];
+    })
+    .slice(0, 5);
+  // console.log(languages);
+  const cData = [
+    ["HTML", 13],
+    ["CSS", 160],
+    ["Javascript", 80],
   ];
 
   return (
     <section className="section">
       <Wrapper className="section-center">
-        <ExampleChart data={chartData} labels={chartLabels} />
+        <Pie3D data={languages} />
+        <div></div>
+        {/* <ExampleChart data={languages} /> */}
+        <div></div>
       </Wrapper>
     </section>
   );
