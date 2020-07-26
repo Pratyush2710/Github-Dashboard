@@ -39,7 +39,7 @@ const UserInfo = () => {
       color: "yellow",
     },
   ];
-  console.log(items);
+  // console.log(items);
   return (
     <section className="section">
       <Wrapper className="section-center">

@@ -1,7 +1,46 @@
-import React from 'react';
+import React from "react";
+import "./Pie3D.css";
 
-const Column3D = () => {
-  return <div>chart</div>;
+import Highcharts from "highcharts";
+import HighchartsReact from "highcharts-react-official";
+import highcharts3d from "highcharts/highcharts-3d";
+highcharts3d(Highcharts);
+
+const ChartComponent = ({ data }) => {
+  // console.log(data);
+  const options = {
+    chart: {
+      type: "column",
+      options3d: {
+        enabled: true,
+        alpha: 15,
+        beta: 15,
+        depth: 50,
+        viewDistance: 25,
+      },
+    },
+    title: {
+      text: "Popular Repository",
+    },
+
+    plotOptions: {
+      column: {
+        depth: 25,
+      },
+    },
+    series: [
+      {
+        // type: "pie",
+        data: data,
+      },
+    ],
+  };
+
+  return (
+    <div>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+  );
 };
 
-export default Column3D;
+export default ChartComponent;

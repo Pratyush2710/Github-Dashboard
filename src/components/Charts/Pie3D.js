@@ -1,21 +1,13 @@
 import React from "react";
+import "./Pie3D.css";
 
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import highcharts3d from "highcharts/highcharts-3d";
 highcharts3d(Highcharts);
-Highcharts.setOptions({
-  colors: [
-    "#50B432",
-    "#ED561B",
-    "#DDDF00",
-    "#24CBE5",
-    "#64E572",
-    "#FF9655",
-    "#FFF263",
-    "#6AF9C4",
-  ],
-});
+// Set custom colors to Pie3D
+// Highcharts.setOptions({
+// colors: ["#50B432","#ED561B","#DDDF00","#24CBE5","#64E572","#FF9655","#FFF263","#6AF9C4",],});
 const ChartComponent = ({ data }) => {
   // console.log(data);
   const options = {
@@ -37,7 +29,6 @@ const ChartComponent = ({ data }) => {
     },
     tooltip: {
       pointFormat: " <b>{point.percentage:.1f}%</b>",
-      // {series.name}: <b>{point.percentage:.1f}%</b>",
     },
     plotOptions: {
       pie: {

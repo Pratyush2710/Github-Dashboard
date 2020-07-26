@@ -9,7 +9,7 @@ const Repos = () => {
   let languages = githubRepos.reduce((total, item) => {
     const { language } = item;
     if (!language) return total;
-    console.log(language);
+    // console.log(language);
     if (!total[language]) {
       total[language] = [language, 1];
     } else {
@@ -17,6 +17,7 @@ const Repos = () => {
     }
     return total;
   }, {});
+
   // console.log(languages);
   //Object changed to array for data structuring
   // Sorted the array to get most popular languages
@@ -26,7 +27,29 @@ const Repos = () => {
       return b[1] - a[1];
     })
     .slice(0, 5);
-  // console.log(languages);
+
+  let stargazers_counts = githubRepos.reduce((total, item) => {
+    const { language, stargazers_count } = item;
+    if (!language) return total;
+    // console.log(language);
+    if (!total[language]) {
+      total[language] = [language, stargazers_count];
+    } else {
+      total[language] = [language, total[language][1] + stargazers_count];
+    }
+    return total;
+  }, {});
+
+  // console.log(stargazers_counts);
+
+  stargazers_counts = Object.values(stargazers_counts)
+    .sort((a, b) => {
+      return b[1] - a[1];
+    })
+    .slice(0, 5);
+
+  // console.log(stargazers_counts);
+
   const cData = [
     ["HTML", 13],
     ["CSS", 160],
@@ -37,8 +60,8 @@ const Repos = () => {
     <section className="section">
       <Wrapper className="section-center">
         <Pie3D data={languages} />
-        <div></div>
-        {/* <ExampleChart data={languages} /> */}
+        <Doughnut2D data={stargazers_counts} />
+        <Column3D data={cData} />
         <div></div>
       </Wrapper>
     </section>
