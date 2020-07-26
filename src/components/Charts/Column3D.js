@@ -28,9 +28,19 @@ const ChartComponent = ({ data }) => {
         depth: 25,
       },
     },
+    xAxis: {
+      title: {
+        text: "Repository",
+      },
+    },
+
+    yAxis: {
+      title: {
+        text: "Stars",
+      },
+    },
     series: [
       {
-        // type: "pie",
         data: data,
       },
     ],
