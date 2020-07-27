@@ -58,7 +58,7 @@ const Repos = () => {
         total.stars[count_stars++] = [name, stargazers_count];
       }
       if (forks > 0) {
-        console.log(name);
+        // console.log(name);
         total.forks[count_forks++] = [name, forks];
       }
       return total;
@@ -74,14 +74,14 @@ const Repos = () => {
       return b[1] - a[1];
     })
     .slice(0, 5);
-  console.log(stars);
+  // console.log(stars);
 
   forks = Object.values(forks)
     .sort((a, b) => {
       return b[1] - a[1];
     })
     .slice(0, 5);
-  console.log(forks);
+  // console.log(forks);
 
   const cData = [
     ["HTML", 13],

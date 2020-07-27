@@ -18,6 +18,21 @@ const GithubProvider = ({ children }) => {
   const [requests, setRequests] = useState(0);
   const [loading, setIsLoading] = useState(false);
   const [error, setError] = useState({ show: false, msg: "" });
+
+  const searchGithubUser = async (user) => {
+    console.log(user);
+    toggleError();
+    //setLoading(true)
+    const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
+      console.log(error)
+    );
+    console.log(response);
+    if (response) {
+      setGithubUser(response.data);
+    } else {
+      toggleError(true, "No user found!");
+    }
+  };
   // check rate
   const checkRequests = () => {
     axios(`${rootUrl}/rate_limit`)
@@ -43,7 +58,14 @@ const GithubProvider = ({ children }) => {
 
   return (
     <GithubContext.Provider
-      value={{ githubUser, githubRepos, githubFollowers, requests, error }}>
+      value={{
+        githubUser,
+        githubRepos,
+        githubFollowers,
+        requests,
+        error,
+        searchGithubUser,
+      }}>
       {children}
     </GithubContext.Provider>
   );
