@@ -29,6 +29,7 @@ const ChartComponent = ({ data }) => {
       },
     },
     xAxis: {
+      categories: data,
       title: {
         text: "Repository",
       },

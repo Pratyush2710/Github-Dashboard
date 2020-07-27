@@ -48,7 +48,40 @@ const Repos = () => {
     })
     .slice(0, 5);
 
-  // console.log(stargazers_counts);
+  let count_stars = 0,
+    count_forks = 0;
+  let { stars, forks } = githubRepos.reduce(
+    (total, item) => {
+      const { stargazers_count, name, forks } = item;
+      // console.log(item);
+      if (stargazers_count > 0) {
+        total.stars[count_stars++] = [name, stargazers_count];
+      }
+      if (forks > 0) {
+        console.log(name);
+        total.forks[count_forks++] = [name, forks];
+      }
+      return total;
+    },
+    {
+      stars: {},
+      forks: {},
+    }
+  );
+
+  stars = Object.values(stars)
+    .sort((a, b) => {
+      return b[1] - a[1];
+    })
+    .slice(0, 5);
+  console.log(stars);
+
+  forks = Object.values(forks)
+    .sort((a, b) => {
+      return b[1] - a[1];
+    })
+    .slice(0, 5);
+  console.log(forks);
 
   const cData = [
     ["HTML", 13],
@@ -61,8 +94,8 @@ const Repos = () => {
       <Wrapper className="section-center">
         <Pie3D data={languages} />
         <Doughnut2D data={stargazers_counts} />
-        <Column3D data={cData} />
-        <Bar3D data={cData} />
+        <Column3D data={stars} />
+        <Bar3D data={forks} />
       </Wrapper>
     </section>
   );

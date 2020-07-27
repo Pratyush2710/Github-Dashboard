@@ -29,12 +29,15 @@ const ChartComponent = ({ data }) => {
       },
     },
     xAxis: {
+      categories: data,
+      gridLineWidth: 0,
       title: {
         text: "Repository",
       },
     },
 
     yAxis: {
+      // gridLineWidth: 0,
       title: {
         text: "Stars",
       },
