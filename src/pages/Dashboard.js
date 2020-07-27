@@ -5,7 +5,7 @@ import { GithubContext } from "../context/context";
 const Dashboard = () => {
   return (
     <main>
-      {/* <Navbar /> */}
+      <Navbar />
       <Search />
       <Info />
       <User />
