@@ -67,21 +67,23 @@ function Background(props) {
 
 function App() {
   return (
-    <Router>
-      {/* <Background total={50} /> */}
+    <AuthWrapper>
+      <Router>
+        {/* <Background total={50} /> */}
 
-      <Switch>
-        <PrivateRoute path="/" exact={true}>
-          <Dashboard />
-        </PrivateRoute>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="*">
-          <Error></Error>
-        </Route>
-      </Switch>
-    </Router>
+        <Switch>
+          <PrivateRoute path="/" exact={true}>
+            <Dashboard />
+          </PrivateRoute>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="*">
+            <Error></Error>
+          </Route>
+        </Switch>
+      </Router>
+    </AuthWrapper>
   );
 }
 
