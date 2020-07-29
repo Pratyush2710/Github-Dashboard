@@ -71,9 +71,9 @@ function App() {
       {/* <Background total={50} /> */}
 
       <Switch>
-        <Route path="/" exact={true}>
+        <PrivateRoute path="/" exact={true}>
           <Dashboard />
-        </Route>
+        </PrivateRoute>
         <Route path="/login">
           <Login />
         </Route>
