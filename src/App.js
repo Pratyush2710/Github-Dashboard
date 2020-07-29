@@ -70,7 +70,6 @@ function App() {
     <AuthWrapper>
       <Router>
         {/* <Background total={50} /> */}
-
         <Switch>
           <PrivateRoute path="/" exact={true}>
             <Dashboard />
