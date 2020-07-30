@@ -15,6 +15,9 @@ const Card = () => {
     location,
     twitter_username,
   } = githubUser;
+  // console.log(githubUs);
+  const blogLink = blog ? `http://${blog}` : "#";
+  console.log(blogLink);
   return (
     <Wrapper>
       <header>
@@ -33,7 +36,7 @@ const Card = () => {
         <p>
           <MdLocationOn></MdLocationOn> {location || "Globe"}
         </p>
-        <a href={"https://${blog}"}>
+        <a href={blogLink}>
           <MdLink></MdLink>
           {blog || "blog"}
         </a>
