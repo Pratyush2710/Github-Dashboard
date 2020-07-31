@@ -114,30 +114,6 @@ export default [
     site_admin: false,
   },
   {
-    login: "gauravgutholia",
-    id: 49594934,
-    node_id: "MDQ6VXNlcjQ5NTk0OTM0",
-    avatar_url: "https://avatars2.githubusercontent.com/u/49594934?v=4",
-    gravatar_id: "",
-    url: "https://api.github.com/users/gauravgutholia",
-    html_url: "https://github.com/gauravgutholia",
-    followers_url: "https://api.github.com/users/gauravgutholia/followers",
-    following_url:
-      "https://api.github.com/users/gauravgutholia/following{/other_user}",
-    gists_url: "https://api.github.com/users/gauravgutholia/gists{/gist_id}",
-    starred_url:
-      "https://api.github.com/users/gauravgutholia/starred{/owner}{/repo}",
-    subscriptions_url:
-      "https://api.github.com/users/gauravgutholia/subscriptions",
-    organizations_url: "https://api.github.com/users/gauravgutholia/orgs",
-    repos_url: "https://api.github.com/users/gauravgutholia/repos",
-    events_url: "https://api.github.com/users/gauravgutholia/events{/privacy}",
-    received_events_url:
-      "https://api.github.com/users/gauravgutholia/received_events",
-    type: "User",
-    site_admin: false,
-  },
-  {
     login: "rahuldkjain",
     id: 26406279,
     node_id: "MDQ6VXNlcjI2NDA2Mjc5",
@@ -203,6 +179,53 @@ export default [
     events_url: "https://api.github.com/users/Singh-Shivani/events{/privacy}",
     received_events_url:
       "https://api.github.com/users/Singh-Shivani/received_events",
+    type: "User",
+    site_admin: false,
+  },
+  {
+    login: "MdRashid62",
+    id: 55427374,
+    node_id: "MDQ6VXNlcjU1NDI3Mzc0",
+    avatar_url: "https://avatars2.githubusercontent.com/u/55427374?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/MdRashid62",
+    html_url: "https://github.com/MdRashid62",
+    followers_url: "https://api.github.com/users/MdRashid62/followers",
+    following_url:
+      "https://api.github.com/users/MdRashid62/following{/other_user}",
+    gists_url: "https://api.github.com/users/MdRashid62/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/MdRashid62/starred{/owner}{/repo}",
+    subscriptions_url: "https://api.github.com/users/MdRashid62/subscriptions",
+    organizations_url: "https://api.github.com/users/MdRashid62/orgs",
+    repos_url: "https://api.github.com/users/MdRashid62/repos",
+    events_url: "https://api.github.com/users/MdRashid62/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/MdRashid62/received_events",
+    type: "User",
+    site_admin: false,
+  },
+  {
+    login: "victorbjorklund",
+    id: 4668654,
+    node_id: "MDQ6VXNlcjQ2Njg2NTQ=",
+    avatar_url: "https://avatars0.githubusercontent.com/u/4668654?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/victorbjorklund",
+    html_url: "https://github.com/victorbjorklund",
+    followers_url: "https://api.github.com/users/victorbjorklund/followers",
+    following_url:
+      "https://api.github.com/users/victorbjorklund/following{/other_user}",
+    gists_url: "https://api.github.com/users/victorbjorklund/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/victorbjorklund/starred{/owner}{/repo}",
+    subscriptions_url:
+      "https://api.github.com/users/victorbjorklund/subscriptions",
+    organizations_url: "https://api.github.com/users/victorbjorklund/orgs",
+    repos_url: "https://api.github.com/users/victorbjorklund/repos",
+    events_url: "https://api.github.com/users/victorbjorklund/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/victorbjorklund/received_events",
     type: "User",
     site_admin: false,
   },

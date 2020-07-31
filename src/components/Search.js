@@ -7,6 +7,7 @@ const Search = () => {
   const { requests, error, searchGithubUser, isLoading } = React.useContext(
     GithubContext
   );
+  console.log(React.useContext(GithubContext));
   //get things from global context
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,7 +46,9 @@ const Search = () => {
             )}
           </div>
         </form>
-        <h3>requests: {requests}/60</h3>
+        <h3>Requests Left: {requests}/60</h3>
+        <h6></h6>
+        <h5 style={{ color: "red" }}>*Renews every 1 hour</h5>
       </Wrapper>
     </section>
   );
@@ -54,7 +57,7 @@ const Search = () => {
 const Wrapper = styled.div`
   position: relative;
   display: grid;
-  gap: 1rem 1.75rem;
+  gap: 0rem 1.75rem;
   @media (min-width: 768px) {
     grid-template-columns: 1fr max-content;
     align-items: center;

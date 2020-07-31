@@ -4,12 +4,10 @@ import { GithubContext } from "../context/context";
 import { Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { githubRepos } = React.useContext(GithubContext);
-  // console.log(githubRepos);
 
   let languages = githubRepos.reduce((total, item) => {
     const { language } = item;
     if (!language) return total;
-    // console.log(language);
     if (!total[language]) {
       total[language] = [language, 1];
     } else {
@@ -31,7 +29,6 @@ const Repos = () => {
   let stargazers_counts = githubRepos.reduce((total, item) => {
     const { language, stargazers_count } = item;
     if (!language) return total;
-    // console.log(language);
     if (!total[language]) {
       total[language] = [language, stargazers_count];
     } else {
@@ -39,8 +36,6 @@ const Repos = () => {
     }
     return total;
   }, {});
-
-  // console.log(stargazers_counts);
 
   stargazers_counts = Object.values(stargazers_counts)
     .sort((a, b) => {
@@ -53,12 +48,10 @@ const Repos = () => {
   let { stars, forks } = githubRepos.reduce(
     (total, item) => {
       const { stargazers_count, name, forks } = item;
-      // console.log(item);
       if (stargazers_count > 0) {
         total.stars[count_stars++] = [name, stargazers_count];
       }
       if (forks > 0) {
-        // console.log(name);
         total.forks[count_forks++] = [name, forks];
       }
       return total;
@@ -74,14 +67,12 @@ const Repos = () => {
       return b[1] - a[1];
     })
     .slice(0, 5);
-  // console.log(stars);
 
   forks = Object.values(forks)
     .sort((a, b) => {
       return b[1] - a[1];
     })
     .slice(0, 5);
-  // console.log(forks);
 
   return (
     <section className="section">

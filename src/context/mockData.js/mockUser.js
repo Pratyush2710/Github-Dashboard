@@ -28,10 +28,10 @@ export default {
   hireable: null,
   bio: " Developer || Programmer || Instrumentalist ",
   twitter_username: null,
-  public_repos: 51,
+  public_repos: 52,
   public_gists: 0,
-  followers: 9,
-  following: 31,
+  followers: 10,
+  following: 32,
   created_at: "2017-08-08T09:19:16Z",
   updated_at: "2020-07-22T19:22:06Z",
 };
