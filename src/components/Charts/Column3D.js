@@ -13,8 +13,8 @@ const ChartComponent = ({ data }) => {
       type: "column",
       options3d: {
         enabled: true,
-        alpha: 15,
-        beta: 15,
+        // alpha: 15,
+        // beta: 15,
         depth: 50,
         viewDistance: 25,
       },

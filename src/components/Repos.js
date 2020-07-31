@@ -101,13 +101,11 @@ const Wrapper = styled.div`
   div {
     width: 100% !important;
   }
-  .fusioncharts-container {
-    width: 100% !important;
-  }
-  svg {
+
+  /* svg {
     width: 100% !important;
     border-radius: var(--radius) !important;
-  }
+  } */
 `;
 
 export default Repos;

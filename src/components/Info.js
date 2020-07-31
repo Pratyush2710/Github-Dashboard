@@ -98,20 +98,22 @@ const Wrapper = styled.section`
       text-transform: capitalize;
     }
     .pink {
-      background: #ffe0f0;
-      color: #da4a91;
+      background: #edb4c0;
+      color: #eb4f86;
     }
     .green {
-      background: var(--clr-primary-10);
-      color: var(--clr-primary-5);
+      background: #fcb974;
+      /* var(--clr-primary-10); */
+      color: #fa8948;
+      /* var(--clr-primary-5); */
     }
     .purple {
-      background: #e6e6ff;
-      color: #5d55fa;
+      background: #99b3ff;
+      color: #173386;
     }
     .yellow {
-      background: #fffbea;
-      color: #f0b429;
+      background: #f08587;
+      color: #f64a62;
     }
   }
 `;

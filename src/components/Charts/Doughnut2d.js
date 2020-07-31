@@ -9,14 +9,20 @@ const ChartComponent = ({ data }) => {
   // console.log(data);
   const options = {
     chart: {
+      backgroundColor: "#1f1f1f",
       type: "pie",
       options3d: {
         enabled: true,
         alpha: 45,
       },
     },
+    legend: {
+      itemStyle: {
+        color: "#fff",
+      },
+    },
     title: {
-      text: "Stars per Language",
+      text: "<b>Stars per Language</b>",
     },
     // accessibility: {
     //   point: {
@@ -30,10 +36,10 @@ const ChartComponent = ({ data }) => {
       pie: {
         allowPointSelect: true,
         cursor: "pointer",
-        innerSize: 60,
-        depth: 25,
+        innerSize: 80,
+        depth: 65,
         dataLabels: {
-          enabled: true,
+          enabled: false,
           format: "{point.name}:{point.y}",
         },
         showInLegend: true,
