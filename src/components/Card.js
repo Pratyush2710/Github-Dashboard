@@ -23,7 +23,7 @@ const Card = () => {
       <header>
         <img src={avatar_url} alt={name} />
         <div>
-          <h4>{name}</h4>
+          <h4 className="profile">{name}</h4>
           <p> @{twitter_username || "pratyush2710"}</p>
         </div>
         <a href={html_url}>Follow</a>
@@ -46,7 +46,8 @@ const Card = () => {
 };
 
 const Wrapper = styled.article`
-  background: var(--clr-white);
+  background: #1f1f1f;
+  /* var(--clr-white); */
   padding: 1.5rem 2rem;
   border-top-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
@@ -59,14 +60,18 @@ const Wrapper = styled.article`
     top: 0;
     left: 0;
     transform: translateY(-100%);
-    background: var(--clr-white);
-    color: var(--clr-grey-5);
+    background: #1f1f1f;
+    /* var(--clr-white); */
+    color: #fff;
+    /* var(--clr-grey-5); */
     border-top-right-radius: var(--radius);
     border-top-left-radius: var(--radius);
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 0.5rem 1rem 0 1rem;
     letter-spacing: var(--spacing);
     font-size: 1rem;
+  }
+
   }
   header {
     display: grid;
@@ -82,26 +87,36 @@ const Wrapper = styled.article`
     h4 {
       margin-bottom: 0.25rem;
     }
+      h4.profile{
+    color: #2faeba;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+}
     p {
       margin-bottom: 0;
     }
     a {
-      color: var(--clr-primary-5);
+      color: #fff;
+      /* var(--clr-primary-5); */
       border: 1px solid var(--clr-primary-5);
       padding: 0.25rem 0.75rem;
       border-radius: 1rem;
+      background: var(--clr-primary-4);
       text-transform: capitalize;
       letter-spacing: var(--spacing);
       transition: var(--transition);
       cursor: pointer;
       &:hover {
         background: var(--clr-primary-5);
-        color: var(--clr-white);
+        color: #fff;
+        /* var(--clr-white); */
       }
     }
   }
   .bio {
-    color: var(--clr-grey-3);
+    color: #fff;
+    /* var(--clr-grey-3); */
   }
   .links {
     p,

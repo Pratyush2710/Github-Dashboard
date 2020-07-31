@@ -7,7 +7,7 @@ const Followers = () => {
 
   return (
     <Wrapper>
-      <div className="followers">
+      <div className="followers scroller">
         {githubFollowers.map((follower, index) => {
           const { avatar_url: img, html_url, login } = follower;
           return (
@@ -26,7 +26,8 @@ const Followers = () => {
 };
 
 const Wrapper = styled.article`
-  background: var(--clr-white);
+  background: #1f1f1f;
+  /* var(--clr-white); */
   border-top-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
@@ -38,22 +39,28 @@ const Wrapper = styled.article`
     top: 0;
     left: 0;
     transform: translateY(-100%);
-    background: var(--clr-white);
-    color: var(--clr-grey-5);
+    background: #1f1f1f;
+    /* (--clr-white); */
+    color: #ffffff;
+    /* var(--clr-grey-5); */
     border-top-right-radius: var(--radius);
     border-top-left-radius: var(--radius);
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 0.5rem 1rem 0 1rem;
     letter-spacing: var(--spacing);
     font-size: 1rem;
   }
   .followers {
-    overflow: scroll;
-    height: 335px;
+    /* overflow: scroll; */
+    height: 370px;
     display: grid;
     /* grid-template-rows: repeat(auto-fill, minmax(45px, 1fr)); */
     gap: 1.25rem 1rem;
     padding: 1rem 2rem;
+  }
+  .scroller {
+    overflow-y: scroll;
+    scrollbar-color: #f00;
   }
   article {
     transition: var(--transition);
@@ -73,7 +80,8 @@ const Wrapper = styled.article`
       margin-bottom: 0;
     }
     a {
-      color: var(--clr-grey-5);
+      color: #2faeba;
+      /* var(--clr-grey-5); */
     }
   }
 `;

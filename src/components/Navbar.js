@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import namaste from "./Charts/image.png";
-import geekLogo from "./Charts/Geek.png";
+import geekLogo from "./Charts/Geek1.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
 const Wrapper = styled.nav`
   padding: 1.5rem;
   margin-bottom: 4rem;
-  background: #000;
+  background: #1f1f1f;
   /* var(--clr-white); */
   text-align: center;
   display: flex;
