@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import namaste from "./Charts/image.png";
-import geekLogo from "./Charts/Geek1.png";
+import namaste from "../images/image.png";
+import geekLogo from "../images/Geek1.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Doughnut2D.css";
+// import "./Doughnut2D.css";
 
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
@@ -22,6 +22,10 @@ const ChartComponent = ({ data }) => {
       },
     },
     title: {
+      style: {
+        color: "#fff",
+        textTransform: "uppercase",
+      },
       text: "<b>Stars per Language</b>",
     },
     // accessibility: {

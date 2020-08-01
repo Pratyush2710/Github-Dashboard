@@ -25,6 +25,10 @@ const ChartComponent = ({ data }) => {
       },
     },
     title: {
+      style: {
+        color: "#fff",
+        textTransform: "uppercase",
+      },
       text: "<b>Languages</b>",
     },
     accessibility: {
