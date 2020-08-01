@@ -47,7 +47,7 @@ const Search = () => {
           </div>
         </form>
         <h3>Requests Left: {requests}/60</h3>
-        <h6></h6>
+        <h6> </h6>
         <h5 style={{ color: "red" }}>*Renews every 1 hour</h5>
       </Wrapper>
     </section>

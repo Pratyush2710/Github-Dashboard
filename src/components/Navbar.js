@@ -31,7 +31,7 @@ const Navbar = () => {
           <strong>{user.name.toUpperCase()}</strong>
         </h4>
       )}
-      <h6></h6>
+      <h6> </h6>
       {isUser ? (
         <button
           onClick={() => {
