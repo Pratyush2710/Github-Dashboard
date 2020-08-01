@@ -4,6 +4,8 @@ import namaste from "../images/image.png";
 import geekLogo from "../images/Geek1.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
+import { AiOutlineFork, AiOutlineStar } from "react-icons/ai";
+
 const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
 
@@ -31,7 +33,26 @@ const Navbar = () => {
           <strong>{user.name.toUpperCase()}</strong>
         </h4>
       )}
-      <h6> </h6>
+      <div>
+        <div>
+          <a
+            href="https://github.com/Pratyush2710/Github-Dashboard"
+            aria-label="Star on GitHub"
+            target="blank"
+            style={{ color: "#d5ed27" }}>
+            <AiOutlineStar className="icon" /> <b>Star this repo</b>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/Pratyush2710/Github-Dashboard/fork"
+            aria-label="Fork on GitHub"
+            target="blank"
+            style={{ color: "#d5ed27" }}>
+            <AiOutlineFork className="icon" /> <b>Fork this repo</b>
+          </a>
+        </div>
+      </div>
       {isUser ? (
         <button
           onClick={() => {
