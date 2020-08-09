@@ -1,8 +1,9 @@
 <h1 align="center">
   Git Geek Dashboard
 </h1>
-  With an amazing feature of secret repository added ( a cool bio of yourself), get a look at detailed stats of your github account. Came across the amazing
-  Github API and felt like playing around and building something out of it.
+  The special Readme repository that was introduced a while ago, lets the user to easily write a cool bio, and see his/her stats. However, one thing missing there was a catchy visualisation of one's Github statistics.
+  Seeing the detailed information provided by GitHub API, I thought of playing around it and developing something along the lines of Github Visual Dashboard.
+  
   <br/>
   <br/>
 
@@ -11,13 +12,17 @@
   <b>GIT GEEK dashboard</b> provides various features with enhanced UI
 
     1. Your global stats ( Repos, Followers, Following, Gists)
-    2. Profile and Followers Card at one place
-    3. Share of your languages per Repo
-    4. Stars per language stats
-    5. Popular Repositories- forks status
-    6. Popular Forks - MOst forked repos stats
+    2. Your Profile
+    3. Followers' Card
+    4. Distribution of languages used in your Repos
+    5. Stars per language stats
+    6. Popular Repositories- forks status
+    7. Popular Forks - Most forked repos stats
 
-Just fill in your `username` or any `Github username` to preview the stats and draw a comparision.
+To get started, fill in your `username` or any `Github username`.
+<br/>
+You then have access to profiles and stats of any github user, where you learn from the vast pool of contributors' work ( and a comparision once in a while for motivation or self-validation never harms ;-) ).
+
 Feel free to give a star and fork if you like it
 
 🚀 Try it out: [Live demo](https://gitgeek.netlify.app)
