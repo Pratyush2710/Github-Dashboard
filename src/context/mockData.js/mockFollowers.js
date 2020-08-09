@@ -229,4 +229,76 @@ export default [
     type: "User",
     site_admin: false,
   },
+  {
+    login: "SamyakJain091998",
+    id: 32704791,
+    node_id: "MDQ6VXNlcjMyNzA0Nzkx",
+    avatar_url: "https://avatars0.githubusercontent.com/u/32704791?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/SamyakJain091998",
+    html_url: "https://github.com/SamyakJain091998",
+    followers_url: "https://api.github.com/users/SamyakJain091998/followers",
+    following_url:
+      "https://api.github.com/users/SamyakJain091998/following{/other_user}",
+    gists_url: "https://api.github.com/users/SamyakJain091998/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/SamyakJain091998/starred{/owner}{/repo}",
+    subscriptions_url:
+      "https://api.github.com/users/SamyakJain091998/subscriptions",
+    organizations_url: "https://api.github.com/users/SamyakJain091998/orgs",
+    repos_url: "https://api.github.com/users/SamyakJain091998/repos",
+    events_url:
+      "https://api.github.com/users/SamyakJain091998/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/SamyakJain091998/received_events",
+    type: "User",
+    site_admin: false,
+  },
+  {
+    login: "manishpandeyvp",
+    id: 64241347,
+    node_id: "MDQ6VXNlcjY0MjQxMzQ3",
+    avatar_url: "https://avatars2.githubusercontent.com/u/64241347?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/manishpandeyvp",
+    html_url: "https://github.com/manishpandeyvp",
+    followers_url: "https://api.github.com/users/manishpandeyvp/followers",
+    following_url:
+      "https://api.github.com/users/manishpandeyvp/following{/other_user}",
+    gists_url: "https://api.github.com/users/manishpandeyvp/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/manishpandeyvp/starred{/owner}{/repo}",
+    subscriptions_url:
+      "https://api.github.com/users/manishpandeyvp/subscriptions",
+    organizations_url: "https://api.github.com/users/manishpandeyvp/orgs",
+    repos_url: "https://api.github.com/users/manishpandeyvp/repos",
+    events_url: "https://api.github.com/users/manishpandeyvp/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/manishpandeyvp/received_events",
+    type: "User",
+    site_admin: false,
+  },
+  {
+    login: "sehejjain",
+    id: 40196214,
+    node_id: "MDQ6VXNlcjQwMTk2MjE0",
+    avatar_url: "https://avatars1.githubusercontent.com/u/40196214?v=4",
+    gravatar_id: "",
+    url: "https://api.github.com/users/sehejjain",
+    html_url: "https://github.com/sehejjain",
+    followers_url: "https://api.github.com/users/sehejjain/followers",
+    following_url:
+      "https://api.github.com/users/sehejjain/following{/other_user}",
+    gists_url: "https://api.github.com/users/sehejjain/gists{/gist_id}",
+    starred_url:
+      "https://api.github.com/users/sehejjain/starred{/owner}{/repo}",
+    subscriptions_url: "https://api.github.com/users/sehejjain/subscriptions",
+    organizations_url: "https://api.github.com/users/sehejjain/orgs",
+    repos_url: "https://api.github.com/users/sehejjain/repos",
+    events_url: "https://api.github.com/users/sehejjain/events{/privacy}",
+    received_events_url:
+      "https://api.github.com/users/sehejjain/received_events",
+    type: "User",
+    site_admin: false,
+  },
 ];

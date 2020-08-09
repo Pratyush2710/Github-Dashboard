@@ -17,7 +17,7 @@ const Card = () => {
   } = githubUser;
   // console.log(githubUs);
   const blogLink = blog ? `http://${blog}` : "#";
-  console.log(blogLink);
+
   return (
     <Wrapper>
       <header>
